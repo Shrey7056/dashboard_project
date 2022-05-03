@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Selection</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="index2.html" rel="import" />
+    <style>
+        .leftside {
+            margin-top: 40px;
+        }
+
+        .labelexpanded {
+            font-size: 15px;
+        }
+
+        .labelexpanded>input {
+            display: none;
+        }
+
+        .labelexpanded input:checked+.radio-btn {
+            background-color: #3366cb;
+            color: #fff;
+        }
+
+        .radio-btn {
+            width: 150px;
+            height: 130px;
+            border-radius: 15px;
+            position: relative;
+            text-align: center;
+            padding: 15px 20px;
+            box-shadow: 0 1px #c3c3c3;
+            cursor: pointer;
+            background-color: #eaeaea;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .radio-btn>img {
+            width: 65px;
+            height: 70px;
+        }
+
+        #ui {
+            background-color: #333;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+
+        body {
+            background-image: url(image.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        button:hover {
+            border: 1px solid #0099cc;
+            background-color: #00aacc;
+            color: #ffffff;
+            padding: 5px 10px;
+        }
+
+        button:disabled {
+            border: 1px solid #999999;
+            background-color: #cccccc;
+            color: #666666;
+        }
+
+        button {
+            border: 1px solid #0066cc;
+            background-color: #0099cc;
+            color: #ffffff;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div id="ui">
+                    <form class="form-group text-center" name="myform" id="form1" method="get" action="index2.html">
+                        <div class="row justify-content-center d-flex align-items-center">
+                            <div class="col-lg-6 leftside">
+                                <label class="labelexpanded">
+                                    <input type="radio" name="targetgroup" value="Manual" required>
+                                    <div class="radio-btn"><img src="manual.png">
+                                        <p>Manual</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-lg-6 leftside">
+                                <div class="col-lg-6 ">
+                                    <label class="labelexpanded">
+                                        <input type="radio" name="targetgroup" value="Automation">
+                                        <div class="radio-btn"><img src="automation.png">
+                                            <p>Automation</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <button id="button" name="submit" value="submit" class="form-control"
+                            >submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
